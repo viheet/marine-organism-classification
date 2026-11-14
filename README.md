@@ -57,23 +57,8 @@ Input 224x224x3
 
 Preprocessed images go to `data/processed/`, augmented training copies to `data/augmented_train/`, and results (model, metrics, curves, confusion matrix) to `runs/<model>/`.
 
-## Results
-
-Evaluated on the held-out **test** split.
-
-| Model | Accuracy | Top-5 acc. | Macro-F1 |
-|---|---|---|---|
-| VGG16 (transfer learning) | TBD | TBD | TBD |
-| Custom CNN (baseline) | TBD | TBD | TBD |
-
-<!-- Replace TBD with the numbers from the notebook's final comparison table. -->
-
 ## Limitations and future work
 
 - Class imbalance: try `use_class_weight=True` and compare macro-F1.
 - Images are stretched to 224x224 without preserving aspect ratio; padding to a square first may help elongated chain-forming species.
 - Try newer backbones (EfficientNet, ResNet50) and add Grad-CAM visualisations.
-
-## License
-
-MIT.
